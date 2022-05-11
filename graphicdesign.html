@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Salma Aly's Portfolio</title>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pstyle.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">
+                <div class="logo" id="girl">
+            <img src="logoo.png" width="125px">
+        </div>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="home.html#mainpage" >Home</a></li>
+                <li class="nav__item"><a href="#container">Skills</a></li>
+                <li class="nav__item"><a href="#qualification__container">Experience</a></li>
+                <li class="nav__item"><a href="#portfolio__container" class="active">Portfolio</a></li>
+                <li class="nav__item"><a href="#contact">Contact Me</a></li>
+            </ul>
+            </div>
+            
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+        </header>
+
+        <!---Footer--->
+        <footer class="footer">
+            <p class="footer__title">Salma</p>
+            <div class="footer__social">
+                <a href="#https://eg.linkedin.com/in/salma-aly-4344241b6?trk=people-guest_people_search-card" target="_blank" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#https://www.instagram.com/it.is.salma/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#https://twitter.com/" class="footer__icon" target="_blank"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p>&#169; 2021 copyright all right reserved</p>
+        </footer>
+        
+        <script>
+        function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+        function fuckFunction() {
+var x = document.getElementById("fuckDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+              function myFunction1() {
+  var x = document.getElementById("myDIV1");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction2() {
+  var x = document.getElementById("myDIV2");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+        </script>
+
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+            
+            window.addEventListener('scroll', function(){
+                let value = window.scrollY;
+                stars.style.left= value *0.25+'px';
+                moon.style.top= value *1.05+'px';
+                mountains_behind.style.top= value *0.5+'px';
+                mountains_front.style.top= value *0+'px';
+                text.style.marginRight= value *4+'px';
+                text.style.marginTop= value *1.5+'px';
+                btn.style.marginTop= value *1.5+'px';
+                header.style.top= value *0.5+'px';
+            })
+        </script>
+        <script>
+            const tabs = document.querySelectorAll('[data-target]'),
+                  tabContents = document.querySelectorAll('[data-content]')
+            
+            tabs.forEach(tab =>{
+                tab.addEventListener('click', () =>{
+                    const target = document.querySelector(tab.dataset.target)
+                    
+                    tabContents.forEach(tabContent =>{
+                        tabContent.classList.remove('qualification__active')
+                    })
+                    target.classList.add('qualification__active')
+                    
+                    tabs.forEach(tab =>{
+                        tab.classList.remove('qualification__active')
+                    })
+                    tab.classList.add('qualification__active')
+                })
+            })
+        </script>
+        <script src="java.js"></script>
+                
+    </body>
+</html>
